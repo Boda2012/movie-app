@@ -7,8 +7,8 @@ import { Route, RouterProvider, createRoutesFromElements } from "react-router";
 import { createBrowserRouter } from "react-router-dom";
 
 // // Auth
-// import AdminRoute from "./pages/Admin/AdminRoute.jsx";
-// import GenreList from "./pages/Admin/GenreList.jsx";
+import AdminRoute from "./pages/Admin/AdminRoute.jsx";
+import GenreList from "./pages/Admin/GenreList.jsx";
 
 // // Restricted
 import Login from "./pages/Auth/Login.jsx";
@@ -38,14 +38,14 @@ const router = createBrowserRouter(
         <Route path="/profile" element={<Profile />} />
       </Route>
 
-      {/* <Route path="" element={<AdminRoute />}>
+      <Route path="" element={<AdminRoute />}>
         <Route path="/admin/movies/genre" element={<GenreList />} />
-        <Route path="/admin/movies/create" element={<CreateMovie />} />
-        <Route path="/admin/movies-list" element={<AdminMoviesList />} />
-        <Route path="/admin/movies/update/:id" element={<UpdateMovie />} />
-        <Route path="/admin/movies/dashboard" element={<AdminDashboard />} />
-        <Route path="/admin/movies/comments" element={<AllComments />} />
-      </Route> */}
+        {/* <Route path="/admin/movies/create" element={<CreateMovie />} /> */}
+        {/* <Route path="/admin/movies-list" element={<AdminMoviesList />} /> */}
+        {/* <Route path="/admin/movies/update/:id" element={<UpdateMovie />} /> */}
+        {/* <Route path="/admin/movies/dashboard" element={<AdminDashboard />} /> */}
+        {/* <Route path="/admin/movies/comments" element={<AllComments />} /> */}
+      </Route>
     </Route>
   )
 );
