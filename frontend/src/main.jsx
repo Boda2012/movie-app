@@ -13,10 +13,10 @@ import { createBrowserRouter } from "react-router-dom";
 // // Restricted
 import Login from "./pages/Auth/Login.jsx";
 import Register from "./pages/Auth/Register.jsx";
-// import PrivateRoute from "./pages/Auth/PrivateRoute.jsx";
+import PrivateRoute from "./pages/Auth/PrivateRoute.jsx";
 
 import Home from "./pages/Home.jsx";
-// import Profile from "./pages/User/Profile.jsx";
+import Profile from "./pages/User/Profile.jsx";
 // import AdminMoviesList from "./pages/Admin/AdminMoviesList.jsx";
 // import UpdateMovie from "./pages/Admin/UpdateMovie.jsx";
 // import CreateMovie from "./pages/Admin/CreateMovie.jsx";
@@ -34,9 +34,9 @@ const router = createBrowserRouter(
       <Route path="/register" element={<Register />} />
       {/* <Route path="/movies/:id" element={<MovieDetails />} /> */}
 
-      {/* <Route path="" element={<PrivateRoute />}>
+      <Route path="" element={<PrivateRoute />}>
         <Route path="/profile" element={<Profile />} />
-      </Route> */}
+      </Route>
 
       {/* <Route path="" element={<AdminRoute />}>
         <Route path="/admin/movies/genre" element={<GenreList />} />
